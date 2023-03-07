@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form action="/index.html" method="POST">
+        <fieldset>
+            <legend>Your Form</legend>
+            <b><label for="fname">First Name</label><br></b>
+            <input type="text" placeholder="First Name"> <br><br>
+            <b><label for="lname">Last Name</label></b><br>
+            <input type="text" placeholder="Last Name"> <br><br>
+            <b><label for="email">Email</label></b><br>
+            <input type="email" placeholder="Email"> <br><br>
+            <b><label for="birthday">Birthday</label></b> <br>
+            <input type="date" name="birhday" id="birthday"> <br><br>
+            <b><label for="description">Description</label></b><br>
+            <textarea name="description" id="description" placeholder="Description" cols="21" rows="4"></textarea><br>
+            <!-- Radio Buttons -->
+            <b><p>Gender</p></b>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label></b>
+            <!--Checkboxes -->
+            <b><p>Skills</p></b>
+            <input type="checkbox" name="HTML" value="HTML">
+            <label for="HTML">HTML</label>
+            <input type="checkbox" name="CSS" value="HTML">
+            <label for="HTML">CSS</label>
+            <input type="checkbox" name="Javascript" value="HTML">
+            <label for="CSS">Javascript</label>
+            <input type="checkbox" name="PHP" value="PHP">
+            <label for="PHP">PHP</label>
+            <input type="checkbox" name="Others" value="Others">
+            <label for="Others">Others</label>
+
+
+        </fieldset>
+
+    </form>
+</body>
+</html>
