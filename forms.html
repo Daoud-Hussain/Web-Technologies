@@ -5,33 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <form action="/index.html" method="POST">
         <fieldset>
-            <legend>Your Form</legend>
-            <b><label for="fname">First Name</label><br></b>
+            <legend >Your Form</legend>
+            <label for="fname">First Name</label>
             <input type="text" placeholder="First Name"> <br>
-            <b><label for="lname">Last Name</label></b><br>
+            <label for="lname">Last Name</label> 
             <input type="text" placeholder="Last Name"> <br>
-            <b><label for="email">Email</label></b><br>
+            <label for="email">Email</label> 
             <input type="email" placeholder="Email"> <br>
-            <b><label for="password">Password</label></b><br>
+            <label for="password">Password</label> 
             <input type="password" placeholder="Password"> <br>
-            <b><label for="birthday">Birthday</label></b> <br>
+            <label for="birthday">Birthday</label> 
             <input type="date" name="birhday" id="birthday"> <br>
-            <b><label for="description">Description</label></b> <br>
-            <textarea name="description" id="description" placeholder="Description" cols="21" rows="4"></textarea><br>
-            <b><p>Profile picture</p></b>
+            <label for="description">Description</label> 
+            <textarea name="description" id="description" placeholder="Description" cols="21" rows="4"></textarea> <br>
+            <label>Profile picture</label>
             <input type="file"> <br>
             <!-- Radio Buttons -->
-            <b><p>Gender</p></b>
+            <!-- <label>Gender</label> 
             <input type="radio" id="male" name="gender" value="Male">
             <label for="male">Male</label>
             <input type="radio" id="female" name="gender" value="Female">
-            <label for="female">Female</label></b>
+            <label for="female">Female</label></b> <br> -->
             <!--Checkboxes -->
-            <b><p>Skills</p></b>
+            <!-- <label>Skills</label>
             <input type="checkbox" name="HTML" value="HTML">
             <label for="HTML">HTML</label>
             <input type="checkbox" name="CSS" value="HTML">
@@ -39,11 +40,9 @@
             <input type="checkbox" name="Javascript" value="HTML">
             <label for="CSS">Javascript</label>
             <input type="checkbox" name="PHP" value="PHP">
-            <label for="PHP">PHP</label>
-            <input type="checkbox" name="Others" value="Others">
-            <label for="Others">Others</label> <br><br>
-            <input type="submit">
-            <input type="reset">
+            <label for="PHP">PHP</label><br><br> -->
+            <!-- <input type="submit">
+            <input type="reset"> -->
         </fieldset>
 
     </form>
