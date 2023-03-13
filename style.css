@@ -14,6 +14,7 @@ form input[type="text"],
 form input[type="tel"],
 form input[type="email"],
 form input[type="date"],
+
 form input[type="password"],
 form input[type="file"],
 form textarea {
@@ -26,4 +27,12 @@ form textarea {
 form label{
     float: left;
     width: 50%;
+}
+form input[type="submit"],
+form input[type="reset"]{
+    float: right;
+    width: 25.7%;
+    padding: 0.3em;
+    /* padding-left: 10px; */
+
 }
