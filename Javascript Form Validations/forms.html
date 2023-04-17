@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form >
+        <fieldset>
+            <legend >Your Form</legend>
+            <label for="fname">First Name</label>
+            <input type="text" value="" name="fName" placeholder="First Name"> <br>
+            <label for="lname">Last Name</label> 
+            <input type="text" placeholder="Last Name"> <br>
+            <label for="email">Email</label> 
+            <input type="email" placeholder="Email"> <br>
+            <label for="password">Password</label> 
+            <input type="password" placeholder="Password"> <br>
+            <label for="birthday">Birthday</label> 
+            <input type="date" name="birhday" id="birthday"> <br>
+            <label for="description">Description</label> 
+            <textarea name="description" id="description" placeholder="Description" cols="21" rows="4"></textarea> <br>
+            <label>Profile picture</label>
+            <input type="file"> <br>
+            <label for="phone">Phone</label>
+            <input type="tel" placeholder="Phone Number"> <br><br> <br><br><br>
+            <!-- Radio Buttons -->
+            <!-- <label>Gender</label> 
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label></b> <br> -->
+            <!--Checkboxes -->
+            <!-- <label>Skills</label>
+            <input type="checkbox" name="HTML" value="HTML">
+            <label for="HTML">HTML</label>
+            <input type="checkbox" name="CSS" value="HTML">
+            <label for="HTML">CSS</label>
+            <input type="checkbox" name="Javascript" value="HTML">
+            <label for="CSS">Javascript</label>
+            <input type="checkbox" name="PHP" value="PHP">
+            <label for="PHP">PHP</label><br><br> -->
+            <br><input type="reset">
+            <input onclick="validate(fName)" type="submit">
+        </fieldset>
+
+    </form>
+
+    <!-- Javascript code goes here -->
+    <script type="text/Javascript">
+        function validate(fName){
+            var valid = /^[1-4][A-Z]{2}[0-9]{2}[A-Z]{2}[0-9]{3}/;
+            if(!fName.value.match(valid) || fName.value.length == 0){
+                alert("Wrong First Name!!");
+                return false;
+            }else{
+                alert("Form is Valid");
+                return true;
+            }
+
+        }
+    </script>
+
+
+</body>
+</html>
